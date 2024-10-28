@@ -4,8 +4,9 @@ RUN dnf install -y prosody
 
 COPY prosody.cfg.lua /etc/prosody/prosody.cfg.lua
 RUN chmod -R go+rwx /etc/prosody/
+RUN chmod -R go+rwx /etc/var/lib/prosody/
 
-EXPOSE 5280
+EXPOSE 5222
 
 USER 1001
 
