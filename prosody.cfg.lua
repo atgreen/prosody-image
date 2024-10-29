@@ -213,7 +213,7 @@ log = {
 
 -- POSIX configuration
 -- For more info see https://prosody.im/doc/modules/mod_posix
-pidfile = "/run/prosody/prosody.pid";
+pidfile = "/tmp/prosody.pid";
 
 --consider_websocket_secure = true
 
@@ -221,7 +221,7 @@ pidfile = "/run/prosody/prosody.pid";
 -- You need to add a VirtualHost entry for each domain you wish Prosody to serve.
 -- Settings under each VirtualHost entry apply *only* to that host.
 
-VirtualHost "labdroid.net"
+VirtualHost "xmpp.labdroid.net"
 
 
 --VirtualHost "localhost"
